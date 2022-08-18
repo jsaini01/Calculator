@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(53, 170, 216),
+    rgb(110, 233, 163)
+  );
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border: solid black;
+  background-color: white;
+  column-gap: 1vw;
+  row-gap: 1vh;
+  padding: 0.5vw;
+}
+
+#btn {
+  border: 1px solid white;
+  font-size: 2vw;
+  padding: 0 2vw;
+}
+
+.input {
+  grid-column: 1 / span 3;
+  padding: 0.1vw;
+  min-height: 3vw;
+  font-size: 1.5vw;
+  outline: none;
+  border: 1px solid grey;
+}
+
+.clear {
+  grid-column: 1 / span 3;
+}

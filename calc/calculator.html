@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <form name="form1">
+        <input type="text" name="allText" class="input" id="input" />
+        <input
+          type="button"
+          value="1"
+          id="btn"
+          onclick="form1.allText.value +=
+        '1' "
+          onkeypress="key() "
+        />
+        <input
+          type="button"
+          value="2"
+          id="btn"
+          onclick="form1.allText.value += '2' "
+        />
+        <input
+          type="button"
+          value="3"
+          id="btn"
+          onclick="form1.allText.value += '3' "
+        />
+
+        <input
+          type="button"
+          value="4"
+          id="btn"
+          onclick="form1.allText.value += '4' "
+        />
+        <input
+          type="button"
+          value="5"
+          id="btn"
+          onclick="form1.allText.value += '5' "
+        />
+        <input
+          type="button"
+          value="6"
+          id="btn"
+          onclick="form1.allText.value += '6' "
+        />
+
+        <input
+          type="button"
+          value="7"
+          id="btn"
+          onclick="form1.allText.value += '7' "
+        />
+        <input
+          type="button"
+          value="8"
+          id="btn"
+          onclick="form1.allText.value += '8' "
+        />
+        <input
+          type="button"
+          value="9"
+          id="btn"
+          onclick="form1.allText.value += '9' "
+        />
+
+        <input
+          type="button"
+          value="/"
+          id="btn"
+          onclick="form1.allText.value += '/' "
+        />
+
+        <input
+          type="button"
+          value="0"
+          id="btn"
+          onclick="form1.allText.value += '0' "
+        />
+        <input
+          type="button"
+          value="="
+          id="btn"
+          onclick="form1.allText.value = eval(form1.allText.value) "
+        />
+
+        <input
+          type="button"
+          value="+"
+          id="btn"
+          onclick="form1.allText.value += '+' "
+        />
+        <input
+          type="button"
+          value="-"
+          id="btn"
+          onclick="form1.allText.value += '-' "
+        />
+        <input
+          type="button"
+          value="*"
+          id="btn"
+          onclick="form1.allText.value += '*' "
+        />
+
+        <input
+          type="button"
+          value="clear"
+          id="btn"
+          class="clear"
+          onclick="form1.allText.value = '' "
+        />
+      </form>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
